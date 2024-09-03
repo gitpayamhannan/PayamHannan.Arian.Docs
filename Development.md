@@ -1,5 +1,32 @@
+<div style="text-align:center">
+
+# Development  فهرست بخش 
+
+</div>
+
+<!---
+تعریف سرفصل ها
+-->
+
 <div style="direction:rtl;font-family:calibri"> 
  
+##### فصل اول (پروسه نصب)
+[پابلیش از Publish Branch](#publish-from-publish-branch)
+
+ [فرآیند بکاپ](#backup)
+  
+##### فصل دوم (آپدیت)
+
+[پابلیش از Update Branch](#publish-from-update-branch)
+
+[تولید پکیج (dacpac.)](#dacpac-package)
+
+[تولید پکیج (aup.)](#aup-package)
+
+##### فصل سوم ( ایندکس )
+
+ [فرآیند ایندکس کردن](#indexer)
+
 
 # Development Part
  این سامانه تحت وب می باشد که از زبانها و تکنولوژی های زیر ساخته شده است :
@@ -24,7 +51,7 @@
 ```
 
 </div>
-<div style="direction:rtl;font-family:calibri"> 
+<div style="direction:rtl;font-family:calibri" id="publish-from-publish-branch"> 
 
 ## I)  فصل اول (پروسه نصب)
  برای راه اندازی این سامانه نیازمند خروجی اپلیکیشن و پایگاه داده را داریم  :
@@ -83,7 +110,7 @@
 
 </div>
 
-<div style="direction:rtl;font-family:calibri"> 
+<div style="direction:rtl;font-family:calibri" id="backup" > 
 
 
 
@@ -171,7 +198,9 @@ Backup is designed to provide a complete copy of the database without any downti
 </div>
 
 
-
+<!---
+publish  from 'Update' branch
+--> 
 
 <div style="direction:rtl;font-family:calibri"> 
 
@@ -179,19 +208,35 @@ Backup is designed to provide a complete copy of the database without any downti
 
 
 ##   II) فصل دوم (پروسه Update)
- برای آپدیت این سامانه نیازمند  پکیج زیر داربم:
-  <mark>
-  پکیج aup 
+
+ </div>
+ 
+<div style="direction:rtl;font-family:calibri" id="publish-from-update-branch"> 
+
+<mark>  
+Publish from 'Update' branch
 </mark>
 
-#####  مرحله اول :
+
 ابتدا پروژه را روی branch ی **Update** می گذاریم
  
-همون پروسه پابلیش  ها را که در مرحله  نصب انجام دادیم، را انجام می دهیم
- 
-#####  مرحله دوم :
+همون پروسه پابلیش  ها را که در مرحله  نصب انجام دادیم، روی لینک زیر کلیک کنید :
 
-تغییرات پایگاه داده را کپی می کنیم
+   [لینک فرآیند پابلیش   ](#publish-from-publish-branch)
+
+</div> 
+
+<!---
+.dacpac تولید پکیج 
+--> 
+
+<div style="direction:rtl;font-family:calibri" id="dacpac-package"> 
+
+<mark>  
+تولید پکیج (dacpac.)
+</mark>
+
+ 
 </div>
 
 <div style="direction:dtr;font-family:calibri"> 
@@ -206,9 +251,16 @@ Backup is designed to provide a complete copy of the database without any downti
   ![](images/dacpac.gif){style="display: block; margin: 0 auto"}
 </div>
 
-  <div style="direction:rtl;font-family:calibri"> 
+<!---
+.aup تولید پکیج 
+-->
 
-##### مرحله آخر (تولید پکیج)
+  <div style="direction:rtl;font-family:calibri" id="aup-package"> 
+
+<mark>  
+تولید پکیج (aup.)
+</mark>
+
 
 </div>
 
@@ -224,13 +276,19 @@ Backup is designed to provide a complete copy of the database without any downti
 
   </div>
 
-  <div style="direction:rtl;font-family:calibri"> 
+<!---
+فرآیند ایندکس کردن
+-->
+
+  <div style="direction:rtl;font-family:calibri" id="indexer"> 
  <mark> 
-  Copy Indexer
+ فرآیند ایندکس کردن
    </mark>
 </div>
 
-  <div style="direction:ltr;font-family:calibri"> 
+
+
+  <div style="direction:ltr;font-family:calibri" > 
 
  in visual studio  go to 'Solution Explorer' find this project: `PayamHannan.Arian.ElasticSearchManager.Indexer`
  
@@ -246,14 +304,12 @@ Backup is designed to provide a complete copy of the database without any downti
 
 
   <div style="direction:rtl;font-family:calibri"> 
- <mark> 
-  Use Indexer
-   </mark>
+ 
 </div>
 
 <div style="direction:ltr;font-family:calibri"> 
 
- 
+ Go to Server :
  
  ```
 1. Copy 'PayamHannan.Arian.ElasticSearchManager.Indexer.exe' file to this path : '\WWWWRoot\Management'
