@@ -18,12 +18,15 @@
 
 [نصب نرم افزار ها](#second-chapter-install-softwares)
  
+##### فصل سوم (آپدیت)
 
+[آپدیت سامانه آریان](#third-chapter-update-arian)
  
 <!---
 ======================================================================================== فصل اول
 کپی یا دانلود نرم افزار ها
 -->  
+
 
 ##### فصل اول (نصب)
 . برای اجرای این سامانه بر روی سیستم مقصد، نیازمند کپی یک سری نرم افزارها سرویس ها و فایل های خود سامانه می باشد
@@ -443,9 +446,40 @@ Step 5 : Checking That IIS Has Been Installed Correctly ?
 
 
 
-
-
 <div>
 
+<!---
+======================================================================================== فصل سوم
+آپدیت آریان
+-->  
+ <div style="direction:rtl;font-family:calibri" id="third-chapter-update-arian">
 
- 
+ ##### III)   آپدیت آریان  
+
+
+</div>
+ <div style="direction:ltr;font-family:calibri" >
+
+ ```
+1. Go to this path: 'C:\inetpub\wwwroot'
+2. Open file 'ConnectionString.json' and check (Be Sure! this ConnectionString want to update)
+3. Run Bupdater with Run As Administrator
+4. Select 'Portal Name' and 'Management' from dropdownlist
+5. Select file with extension '.Aup'
+6. Hit 'Start Update' button
+7. After while A black window will pop up  and prompt 'press any key'
+8. Press every charcter
+9. A White widwow will pop up named 'ScriptOutput.sql'
+10. Ctrl+a select whole page and copy in 'new query'
+11. Go to main menu of ssms and select Query > SqlMode
+12. At the finally run query after that you will see message 'query executed successfully'.
+
+ ```
+
+
+ ![](images/updater.gif){style="display: block; margin: 0 auto"}
+
+
+
+
+ </div>
