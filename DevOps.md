@@ -1,8 +1,29 @@
+<div style="text-align:center">
+
+#  فهرست بخش DevOps
+
+</div>
+
+<!---
+تعریف سرفصل ها
+-->
+
 <div style="direction:rtl;font-family:calibri"> 
 
-# Deployment Part
+##### فصل اول (کپی یا دانلود نرم افزار ها)
+[کپی یا دانلود نرم افزار های اصلی (Main Softwares) ](#first-chapter-main-copy)
+[کپی یا دانلود نرم افزار های جانبی  (Peripheral Softwares)](#first-chapter-peripheral-copy)
+[کپی فایل های سامانه آریان (Arian Files)](#first-chapter-arian-copy) 
+##### فصل دوم (نصب و کانفیگ)
 
-  
+[نصب نرم افزار ها](#second-chapter-install-softwares)
+ 
+
+ 
+<!---
+======================================================================================== فصل اول
+کپی یا دانلود نرم افزار ها
+-->  
 
 ##### فصل اول (نصب)
 . برای اجرای این سامانه بر روی سیستم مقصد، نیازمند کپی یک سری نرم افزارها سرویس ها و فایل های خود سامانه می باشد
@@ -10,29 +31,55 @@
 
 
 
+<!---
+کپی یا دانلود نرم افزار های اصلی
+-->  
+
 <mark>
-: (Main Softwares) کپی یا دانلود نرم افزار های اصلی
+کپی یا دانلود نرم افزار های اصلی (Main Softwares) 
 </mark>
 <p>
 : نرم افزارهایی یا سرویس هایی که بدون نصب آنها پروژه بالا نمی آید شامل
 </p>
-
+   
 </div>
+<div style="direction:ltr;font-family:calibri" id="first-chapter-main-copy"> 
 
 ```
 - SQL Server (Service)
 - SQL Server Management Studio (Software)
 - Elastic Search (Service)
--.NET Framework 4.7+(Framework)
 - Indexer (PayamHannan CO)
+- IIS(Service)
 ```
+</div>
+
+-Sql Server()
+https://dl2.soft98.ir/programing/Microsoft.SQL.Server.2022.Enterprise.x64.rar?1725354847
+
+-SSMS()
+https://www.yasdl.com/135742/%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF-sql-server-management-studio.html
+
+-Elastic Search()
+   Copy in local computer path: 'G:\Software_Prerequires'
+
+
+<!---
+کپی یا دانلود نرم افزار های جانبی
+-->  
+
+<div style="direction:rtl;font-family:calibri" id="first-chapter-peripheral-copy"> 
 
 <mark>
-:  (Peripheral Softwares)کپی یا دانلود نرم افزار های جانبی
+کپی یا دانلود نرم افزار های جانبی  (Peripheral Softwares)
 </mark>
 <p>
-: نرم افزارهایی که به استقرار سامانه سهولت می بخشد و به مسائلی از قبیل نداشتن اینترنت و عدم دسترسی سیستم مقصد سرعت می بخشد شامل
+ نرم افزارهایی که به استقرار سامانه سهولت می بخشد و به مسائلی از قبیل نداشتن اینترنت و عدم دسترسی سیستم مقصد سرعت می بخشد شامل
 </p>
+
+</div>
+
+<div style="direction:ltr;font-family:calibri"> 
 
 ```
 - Firefox (Browser)
@@ -44,7 +91,7 @@
 
  
 
-<div style="text-align:left">
+
 
 - Firefox ()
  https://soft98.ir/internet/web-browser/3176-6-mozilla-firefox.html
@@ -57,20 +104,32 @@
  https://soft98.ir/software/office/365-notepad-plus.html
 - PostMan ()   
 https://www.yasdl.com/247664/%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF-postman.html
-<div> 
+
 
 ##### Copy all of downloaded softwares and paste in directories : SetupFiles > PeripheralSoftwares
 
  ![](images/Peripheral.gif){style="display: block; margin: 0 auto"}
 
+</div>
 
+
+<!---
+کپی فایل های سامانه آریان
+-->  
+
+
+<div style="direction:rtl;font-family:calibri" id="first-chapter-arian-copy"> 
 
 <mark>
-: (Arian Files) کپی فایل های سامانه آریان
+کپی فایل های سامانه آریان (Arian Files) 
 </mark>
 <p>
-: فایل هایی که خروجی نهایی سامانه آریان  می باشد شامل
+ فایل هایی که خروجی نهایی سامانه آریان  می باشد شامل
 </p>
+
+</div>
+
+<div style="direction:ltr;font-family:calibri"> 
 
 ```
 - Publish Portal (Frontend)
@@ -78,13 +137,22 @@ https://www.yasdl.com/247664/%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF-postman.html
 - Database Backup (.Bak)
 - Database Detach & Attach (.Mdf)
 ```
-##### فرآیند پابلیش ها  
+
+</div>
 
 
- 
 
-`Database(detach/attach)` کپی فایلها
+
+
+ <div style="direction:rtl;font-family:calibri"> 
+
+کپی فایلها `Database(detach/attach)` 
 : قبل از جدا کردن یک دیتابیس، باید اطلاعاتی در مورد مسیر فایل های  ذخیره شده آن دیتابیس را به دست آورید مانند شکل زیر 
+ 
+ </div>
+
+<div style="direction:ltr;font-family:calibri"> 
+
  ```
 1. In SQL Server Management Studio, right click on the database and select 'Properties'
 2. Left side  go to the 'Files' menu
@@ -120,6 +188,7 @@ https://www.yasdl.com/247664/%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF-postman.html
 4. When you have the correct files, click OK and you will see the screen show a green checkmark 
 
 ```
+
  ![](images/Attach.png){style="display: block; margin: 0 auto"}
 
  ![](images/Browse_Attach.png){style="display: block; margin: 0 auto"}
@@ -139,19 +208,29 @@ https://www.yasdl.com/247664/%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF-postman.html
 - Attach and Detach option database will down, but not backup and restore.
 ```
 
-<div style="direction:rtl;font-family:calibri"> 
-##### II
+</div>
 
-: فایل ها و نرم افزارها به 3 دسته کلی تقسیم شدند که آنها را در سیستم مقصد کپی می کنیم مطابق شکل  
+<!---
+==================================================================================== فصل دوم
+نصب نرم افزارها
+-->  
+
+<div style="direction:rtl;font-family:calibri" id="second-chapter-install-softwares"> 
+
+##### II) نصب نرم افزارها
+
+ فایل ها و نرم افزارها به 3 دسته کلی تقسیم شدند که آنها را در سیستم مقصد کپی می کنیم مطابق شکل  
 
  ![](images/SetupFiles.gif){style="display: block; margin: 0 auto"}
 
  <mark>
-: (Main Softwares) نصب نرم افزار های اصلی
+نصب نرم افزار های اصلی (Main Softwares) 
 </mark>
 
  
 </div>
+
+<div style="direction:ltr;font-family:calibri"> 
 
 ##### 1. Install SQL Server(Engine Service)   
 ###### Pre-Requisites :
@@ -259,7 +338,7 @@ Step 5: When the installation is completed, you might need to Restart your compu
 
 ![](images/SSMS/Finish.png){style="display: block; margin: 0 auto"}
 
-<div>
+
 
 
 ##### 3. Install Elastic Search(Service)  
@@ -339,37 +418,18 @@ Step 5 : Checking That IIS Has Been Installed Correctly ?
 ![](images/IIS/iis-manager.png){style="display: block; margin: 0 auto"}
 
  
- ##### 4. Install .NET Framework() 
-###### .NET Framework 4.7.2+ is a software framework developed by Microsoft which is a technical prerequisite
+  ##### 4. Host Project() 
 
-###### Check if .NET Framework 4.7.2+ is already installed
-
- Step 1: Get the exact version .NET version installed on your machine,there are alot of methods :
-
- <mark> First Method :</mark>  Open the command prompt and type the following command(all on one single line) :
  ```
- reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP"
- ```
- <mark> Second Method :</mark> If you want to check the latest .NET 4 version type the following command(all on one single line) :
-  ```
-reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\full" /v version
- ```
- <mark> Third Method :</mark> Get the list of .NET version installed on your machine
- ```
- dir /b /ad /o-n %systemroot%\Microsoft.NET\Framework\v?.*
+1. Go to this path: 'C:\inetpub\wwwroot'
+2. Create two folders named 'Portal' ,'Management'
+3. Copy paste project of 'portal' to portal folder and project of 'management' to management foler
+4. Set connectionString of two project
  ```
 
- Step 2: If .NET Framework 4.7+ hasn't been installed on the computer,download it at following link: https://dotnet.microsoft.com/download/dotnet-framework-runtime/net472.
+![](images/IIS/Host.gif){style="display: block; margin: 0 auto"}
 
- Step 3: Click the Download .NET Framework 4.7.2 link, and save the executable file.
-
- Step 4: Tick the box to accept the license terms and click Install. The installation starts.
-
- Step 5: Once the installation is complete, click Finish.
-
-##### Note: You must restart your computer to complete the installation.
-
- ##### 4. Install Indexer() 
+ ##### 5. Install Indexer() 
  in visual studio  go to 'Solution Explorer' find this project: `PayamHannan.Arian.ElasticSearchManager.Indexer`
  
  ```
@@ -383,3 +443,9 @@ reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\full
 
 
 
+
+
+<div>
+
+
+ 
