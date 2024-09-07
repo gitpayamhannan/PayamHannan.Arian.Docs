@@ -459,7 +459,7 @@ Step 5 : Checking That IIS Has Been Installed Correctly ?
 
 </div>
  <div style="direction:ltr;font-family:calibri" >
-
+اصلاح شود با توجه به پوشه درست شود .
  ```
 1. Go to this path: 'C:\inetpub\wwwroot'
 2. Open file 'ConnectionString.json' and check (Be Sure! this ConnectionString want to update)
